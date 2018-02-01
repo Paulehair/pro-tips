@@ -149,4 +149,5 @@ html{
 
 ## Liens utiles :
 * [Caniuse](http://caniuse.com) : c'est compatible ou pas .
-*[Flexboxgrid] (http://flexboxgrid.com/) : travailler avec les grilles directement dans le html .
+* [Flexboxgrid] (http://flexboxgrid.com/) : travailler avec les grilles directement dans le html .
+* (https://davidwalsh.name/write-media-queries-sass) : media-queries avec sass .
