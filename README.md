@@ -24,8 +24,8 @@ Appel de la @font-family :
 }
 ```
 
-@font-face supporté par IE, Opera, Chrome, Safari . 
-formats .ttf .otf .woff supportés par les 5 navigateurs = à privilégier .
+* @font-face supporté par IE, Opera, Chrome, Safari . 
+* formats .ttf .otf .woff supportés par les 5 navigateurs = à privilégier .
 
 ## Media queries
 
