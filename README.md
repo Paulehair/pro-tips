@@ -8,7 +8,7 @@ Propriété font-family et src :
 
 ```css
 @font-face {
-  font-family: 'Raleway_bold;
+  font-family: 'Raleway_bold';
   src: url(font/Raleway_bold.ttf);
   /*J'ai nommé la police Raleway_bold et je vais la chercher dans mon dossier font*/
 }
@@ -18,14 +18,14 @@ Appel de la @font-family :
 
 ```css
 .text {
-  font-family: 'Raleway_bold;
+  font-family: 'Raleway_bold';
   font-size: 22px;
   color: #fff;
 }
 ```
 
-@font-face supporté par IE, Opera, Chrome, Safari
-formats .ttf .otf .woff supportés par les 5 navigateurs = à privilégier
+@font-face supporté par IE, Opera, Chrome, Safari . 
+formats .ttf .otf .woff supportés par les 5 navigateurs = à privilégier .
 
 ## Media queries
 
