@@ -184,6 +184,47 @@ html{
 
 ## FlexboxGrid
 
+Les modificateurs responsives permettent de spécifier différentes tailles de colonnes, décalages, alignement et distribution aux largeurs de la fenêtre xs (= smartphone), sm (= smartphone large), md (= tablette) & lg (= desktop).
+
+* on peut imbriquer des grids dans des grids
+* les flexboxgrids fonctionnent en flex, on peut donc leur appliquer toutes les propriétés des flexbox grâce aux classes prédéfinies
+* NE JAMAIS UTILISER DE MARGIN / PADDING SUR LES BLOCS AUXQUELS SONT APPLIQUÉS LES CLASSES XS, SM, MD ET LG ( => CASSE LA GRILLE)
+
+```html
+<div class="container-fluid">
+    <!-- toujours créer un container qui va contenir la grille -->
+    <!-- la classe fluid evite le changement brutal de la page au breakpoint de la media query -->
+    <div class="row between-xs">
+      <!-- classe between-xs = en flexbox (justify-content: space-between) -->
+      <div class="col-xs-6 col-sm-4">
+        <h2>lorem</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+          irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </div>
+      <div class="col-xs-6 col-sm-4">
+        <h2>lorem</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+          irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </div>
+      <div class="col-xs-6 col-sm-4">
+        <h2>lorem</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+          irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </div>
+      <div class="col-xs-offset-1 col-xs-5 col-sm-4">
+        <!-- offset permet de décaler le bloc vers la droite du nombre de colonnes voulu. Ici, sur ecran smartphone on décale le bloc d'une colonne -->
+        <h2>lorem</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+          irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </div>
+      <div class="col-xs-12 col-sm-4">
+        <h2>lorem</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+          irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </div>
+    </div>
+  </div>
+```
 
 
 ## Liens utiles :
