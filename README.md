@@ -1,6 +1,37 @@
 # Documentation
 
-##Convention BEM
+## Les @font-face
+
+Utiliser les @font-face dans le css permet de définir en local les polices à utiliser pour les afficher dans la page web.
+
+Propriété font-family et src :
+
+```css
+@font-face {
+  font-family: 'Raleway_bold;
+  src: url(font/Raleway_bold.ttf);
+  /*J'ai nommé la police Raleway_bold et je vais la chercher dans mon dossier font*/
+}
+```
+
+Appel de la @font-family : 
+
+```css
+.text {
+  font-family: 'Raleway_bold;
+  font-size: 22px;
+  color: #fff;
+}
+```
+
+@font-face supporté par IE, Opera, Chrome, Safari
+formats .ttf .otf .woff supportés par les 5 navigateurs = à privilégier
+
+## Media queries
+
+
+
+## Convention BEM
 * B -> Block
 * E -> Element
 * M -> Modifier
@@ -42,7 +73,9 @@
     }  
   }
 ```
+
 Exemple en CSS du rendu :
+
 ```css
 .mainList{
 
@@ -60,6 +93,7 @@ Exemple en CSS du rendu :
 
 }
 ```
+
 ## Pseudo attributs
 
 Les pseudo attributs `before`et `after` permettent de créer des noeuds HTML en CSS.
@@ -141,11 +175,16 @@ html{
 
 }
 ```
+
 ### VW(width)/ VH(height)
 
 * Unités relatives à la taille de votre écran (peur importe le device)
 * Attention au VH et à son contenu. 100vh == 100vh quoi qu'il arrive.
 * VW : très utile pour les interfances fluides.
+
+## FlexboxGrid
+
+
 
 ## Liens utiles :
 * [Caniuse](http://caniuse.com) : c'est compatible ou pas .
